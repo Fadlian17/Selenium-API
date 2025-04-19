@@ -1,0 +1,9 @@
+2025-04-19 15:49:25,780 - INFO - Starting register test with username: user_xotjs | email: shftrxzq@mailinator.com
+2025-04-19 15:49:27,764 - INFO - Page title after submit: Create Account
+2025-04-19 15:49:27,764 - ERROR - Register test failed: assert ('Your Account Has Been Created!' in 'Create Account' or 'Account Created' in 'Create Account')
+2025-04-19 15:49:27,888 - INFO - Screenshot saved: screenshots/failed/register_20250419_154927.png
+2025-04-19 15:53:28,999 - INFO - Opened registration page
+2025-04-19 15:53:28,999 - INFO - Using username: user_jcblf, email: hojbcrqh@mailinator.com
+2025-04-19 15:53:32,090 - INFO - Page title after register: Your Account Has Been Created!
+2025-04-19 15:53:32,091 - INFO - Register test passed for user: user_jcblf
+2025-04-19 15:53:32,224 - INFO - Screenshot saved: screenshots/success/register_20250419_155332.png
