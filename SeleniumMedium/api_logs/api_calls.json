@@ -1,0 +1,690 @@
+[
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/bootstrap.min.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/flexslider.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/onebyone.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/font-awesome.min.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/style.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery-1.12.4.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery-migrate-1.2.1.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/resources/image/18/7a/8.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/77/new_ladies_red1_jpg-100216-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/t_shirt_3_jpg-100243-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/t_shirt_3a_jpg-100244-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_07_jpg-100133-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_47_png-100136-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_05_jpg-100132-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_08_3_jpg-100134-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_10_2_jpg-100135-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_11_2_jpg-100137-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_04_jpg-100124-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_46_jpg-100143-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_42_jpg-100142-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_37_jpg-100145-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_49_1_png-100146-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_18_jpg-100144-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_15_jpg-100125-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_30_2_jpg-100129-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_34_jpg-100128-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_14_2_jpg-100126-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_27_jpg-100141-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_40_2_jpg-100138-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_29_jpg-100140-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_44_jpg-100139-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/demo_product31_png-100249-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_23_jpg-100131-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_24_jpg-100130-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_23_jpg-100123-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/cdaudio_png-100199-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/paper2_jpg-100202-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/book2_png-100200-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/resources/image/18/76/2.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/banner_image_2.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/banner_image_3.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/banner_image_5.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6f/demo_product01_jpg-100089-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6b/demo_product02_jpg-100026-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6b/demo_product02_3_jpg-100029-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6f/demo_product03_jpg-100094-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6a/demo_product18_jpg-100013-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6a/demo_product15_1_jpg-100010-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6f/demo_product16_1_jpg-100091-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6d/demo_product17_jpg-100052-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/78/new_ladies_red3_jpg-100225-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/blue_jpg-100251-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product12_jpg-100112-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6a/demo_product30_jpg-100014-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6b/demo_product22_jpg-100031-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_benefit_logo_black_jpg-100117-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_pantene_logo_jpg-100120-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_mac_logo_jpg-100118-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_lancome_logo_gif-100119-56x56.gif"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_mf_gucci_jpg-100153-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_armani_logo_gif-100122-56x56.gif"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_dove_logo_jpg-100121-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_calvin_klein_jpg-100116-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_Bvlgari_jpg-100115-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_sephora_ba_logo_black_jpg-100114-56x56.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://s3-eu-west-1.amazonaws.com/shoptimally-ire/dist/neowize/abantecart/nwa.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://s3-eu-west-1.amazonaws.com/shoptimally-ire/dist/neowize/abantecart/abante.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/payment.gif"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/conrib_btn_sm.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/bootstrap.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/common.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/respond.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.flexslider.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/easyzoom.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.validate.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.carouFredSel.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.mousewheel.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.touchSwipe.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.ba-throttle-debounce.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.onebyone.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/custom.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/extensions/banner_manager/storefront/view/default/javascript/banner_manager.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/footericon.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/sprite.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/sale.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/carousalarrow.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/gotop.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/fonts/fontawesome-webfont.woff2?v=4.7.0"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/product/product/addToCart"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/banner_shadow.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/back.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/forward.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=18&_=1745662627696"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=9&_=1745662627697"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=10&_=1745662627698"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=17&_=1745662627699"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/resources/image/18/7a/8.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=product/search&keyword=Skinsheen%20Bronzer%20Stick&category_id=0"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=product/product&product_id=50"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/bootstrap.min.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/flexslider.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/onebyone.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/font-awesome.min.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/stylesheet/style.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery/star-rating/jquery.rating.css"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery-1.12.4.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery-migrate-1.2.1.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery/star-rating/jquery.MetaData.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery/star-rating/jquery.rating.pack.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/resources/image/18/7a/8.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/77/new_ladies_red1_jpg-100216-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/t_shirt_3_jpg-100243-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/t_shirt_3a_jpg-100244-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_07_jpg-100133-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_47_png-100136-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_05_jpg-100132-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_08_3_jpg-100134-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_10_2_jpg-100135-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_11_2_jpg-100137-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_04_jpg-100124-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_46_jpg-100143-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_42_jpg-100142-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_37_jpg-100145-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_49_1_png-100146-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/73/demo_product_18_jpg-100144-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_15_jpg-100125-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_30_2_jpg-100129-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_34_jpg-100128-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_14_2_jpg-100126-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_27_jpg-100141-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_40_2_jpg-100138-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_29_jpg-100140-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_44_jpg-100139-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/79/demo_product31_png-100249-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_23_jpg-100131-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/72/demo_product_24_jpg-100130-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/demo_product_23_jpg-100123-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/cdaudio_png-100199-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/paper2_jpg-100202-120x120.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/76/book2_png-100200-120x120.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6a/demo_product18_jpg-100013-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6a/demo_product15_1_jpg-100010-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6f/demo_product16_1_jpg-100091-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6d/demo_product17_jpg-100052-250x250.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/6f/demo_product01_jpg-100089-380x380.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/thumbnails/18/71/mf_mac_logo_jpg-100118-57x57.jpg"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=common/captcha"
+  },
+  {
+    "method": "GET",
+    "url": "https://s3-eu-west-1.amazonaws.com/shoptimally-ire/dist/neowize/abantecart/nwa.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://s3-eu-west-1.amazonaws.com/shoptimally-ire/dist/neowize/abantecart/abante.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/payment.gif"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/image/conrib_btn_sm.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/bootstrap.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/common.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/respond.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.flexslider.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/easyzoom.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.validate.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.carouFredSel.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.mousewheel.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.touchSwipe.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.ba-throttle-debounce.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/jquery.onebyone.min.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/javascript/custom.js"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/fonts/fontawesome-webfont.woff2?v=4.7.0"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/footericon.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/sprite.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/storefront/view/default/image/gotop.png"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/product/product/addToCart"
+  },
+  {
+    "method": "POST",
+    "url": "https://automationteststore.com/index.php?rt=r/product/product/calculateTotal"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=product/review/review&product_id=50"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=common/view_count/product&product_id=50"
+  }
+]
