@@ -9,3 +9,6 @@ class HomePage(BasePage):
         print("🔍 Trying to search product...")
         self.enter_text(self.SEARCH_INPUT, product_name)
         self.click(self.SEARCH_BUTTON)
+
+    def is_product_displayed(self, product_name):
+        return product_name in self.driver.page_source

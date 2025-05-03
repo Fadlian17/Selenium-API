@@ -361,6 +361,22 @@
   },
   {
     "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=18&_=1746248439733"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=9&_=1746248439734"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=10&_=1746248439735"
+  },
+  {
+    "method": "GET",
+    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=17&_=1746248439736"
+  },
+  {
+    "method": "GET",
     "url": "https://automationteststore.com/storefront/view/default/image/banner_shadow.png"
   },
   {
@@ -370,22 +386,6 @@
   {
     "method": "GET",
     "url": "https://automationteststore.com/storefront/view/default/image/forward.png"
-  },
-  {
-    "method": "GET",
-    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=18&_=1745662627696"
-  },
-  {
-    "method": "GET",
-    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=9&_=1745662627697"
-  },
-  {
-    "method": "GET",
-    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=10&_=1745662627698"
-  },
-  {
-    "method": "GET",
-    "url": "https://automationteststore.com/index.php?rt=r/extension/banner_manager&type=1&banner_id=17&_=1745662627699"
   },
   {
     "method": "GET",
