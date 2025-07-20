@@ -1,0 +1,166 @@
+# SeleniumHigh Configuration File
+# Copy this file to config.yaml and modify according to your environment
+
+# Environment Configuration
+environment:
+  name: "development"  # development, staging, production, local
+  base_url: "https://automationteststore.com/"
+  api_base_url: "https://api.automationteststore.com/"
+  timeout: 30
+  implicit_wait: 10
+
+# Browser Configuration
+browser:
+  default: "chrome"  # chrome, firefox, safari, edge
+  headless: false
+  window_size: "1920x1080"
+  mobile_emulation: false
+  user_agent: ""
+  
+  # Chrome Options
+  chrome:
+    arguments:
+      - "--no-sandbox"
+      - "--disable-dev-shm-usage"
+      - "--disable-gpu"
+      - "--disable-extensions"
+      - "--disable-infobars"
+    experimental_options:
+      excludeSwitches: ["enable-automation"]
+      useAutomationExtension: false
+    prefs:
+      profile.default_content_setting_values.notifications: 2
+
+  # Firefox Options
+  firefox:
+    arguments:
+      - "--no-sandbox"
+      - "--disable-dev-shm-usage"
+    preferences:
+      dom.webnotifications.enabled: false
+
+# Parallel Execution
+parallel:
+  enabled: true
+  workers: 4
+  max_workers: 8
+
+# Test Data
+test_data:
+  path: "data/"
+  format: "json"  # json, yaml, excel, csv
+  default_dataset: "default"
+
+# Reporting
+reporting:
+  html:
+    enabled: true
+    path: "reports/"
+    title: "SeleniumHigh Test Report"
+    theme: "standard"  # standard, bootstrap, material
+  json:
+    enabled: true
+    path: "reports/"
+  xml:
+    enabled: true
+    path: "reports/"
+  allure:
+    enabled: false
+    path: "reports/allure/"
+
+# Screenshots
+screenshots:
+  enabled: true
+  path: "screenshots/"
+  on_failure: true
+  on_success: false
+  full_page: true
+  quality: 90
+
+# Visual Testing
+visual_testing:
+  enabled: false
+  baseline_path: "screenshots/baseline/"
+  tolerance: 0.95
+  ignore_areas: []
+
+# API Testing
+api:
+  timeout: 30
+  retry_attempts: 3
+  retry_delay: 1
+  verify_ssl: true
+  headers:
+    Content-Type: "application/json"
+    User-Agent: "SeleniumHigh/1.0"
+
+# Performance Monitoring
+performance:
+  enabled: true
+  network_capture: true
+  memory_monitoring: false
+  cpu_monitoring: false
+  metrics_path: "reports/performance/"
+
+# Database (optional)
+database:
+  enabled: false
+  type: "sqlite"  # sqlite, mysql, postgresql, mongodb
+  host: "localhost"
+  port: 3306
+  name: "test_db"
+  username: ""
+  password: ""
+
+# Cloud Testing
+cloud:
+  browserstack:
+    enabled: false
+    username: ""
+    access_key: ""
+    local: false
+  saucelabs:
+    enabled: false
+    username: ""
+    access_key: ""
+    tunnel: false
+
+# Mobile Testing
+mobile:
+  enabled: false
+  device_name: "iPhone 12"
+  platform_name: "iOS"
+  platform_version: "15.0"
+  automation_name: "XCUITest"
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/test.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Email Notifications
+email:
+  enabled: false
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  username: ""
+  password: ""
+  recipients: []
+  subject: "Test Execution Report"
+
+# Slack Notifications
+slack:
+  enabled: false
+  webhook_url: ""
+  channel: "#testing"
+  username: "SeleniumHigh Bot"
+
+# Custom Hooks
+hooks:
+  pre_test: ""
+  post_test: ""
+  pre_suite: ""
+  post_suite: "" 
