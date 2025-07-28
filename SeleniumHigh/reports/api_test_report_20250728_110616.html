@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test Report - AutomationExercise.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .passed { color: #28a745; }
+        .failed { color: #dc3545; }
+        .skipped { color: #ffc107; }
+        .total { color: #007bff; }
+        
+        .api-list {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .api-list h2 {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+            margin: 0;
+        }
+        
+        .api-item {
+            border-bottom: 1px solid #dee2e6;
+            padding: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .api-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .api-item:last-child {
+            border-bottom: none;
+        }
+        
+        .api-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .api-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .api-status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+        .status-pass {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-fail {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status-skip {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .api-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .detail-item {
+            font-size: 0.9em;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #666;
+        }
+        
+        .method-get { color: #28a745; }
+        .method-post { color: #007bff; }
+        .method-put { color: #ffc107; }
+        .method-delete { color: #dc3545; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .api-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 API Test Report</h1>
+            <p>AutomationExercise.com API Testing Results</p>
+            <p>Generated on 2025-07-28 11:06:16</p>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number total">6</div>
+                <div class="stat-label">Total Tests</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number passed">3</div>
+                <div class="stat-label">Passed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number failed">3</div>
+                <div class="stat-label">Failed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number skipped">0</div>
+                <div class="stat-label">Skipped</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50.0%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.40s</div>
+                <div class="stat-label">Duration</div>
+            </div>
+        </div>
+        
+        <div class="api-list">
+            <h2>📋 API Test Results</h2>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 1: Get All Products List</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-get">GET</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/productsList" target="_blank">https://automationexercise.com/api/productsList</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Get all products list
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 2: POST To All Products List</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/productsList" target="_blank">https://automationexercise.com/api/productsList</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        405
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return method not supported
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 3: Get All Brands List</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-get">GET</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/brandsList" target="_blank">https://automationexercise.com/api/brandsList</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Get all brands list
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 4: PUT To All Brands List</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-put">PUT</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/brandsList" target="_blank">https://automationexercise.com/api/brandsList</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        405
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return method not supported
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 5: POST To Search Product</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/searchProduct" target="_blank">https://automationexercise.com/api/searchProduct</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Search products with parameter
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 6: POST To Search Product without parameter</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/searchProduct" target="_blank">https://automationexercise.com/api/searchProduct</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        400
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return bad request
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 7: POST To Verify Login with valid details</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/verifyLogin" target="_blank">https://automationexercise.com/api/verifyLogin</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        [200, 404]
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Verify login with valid credentials
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 8: POST To Verify Login without email parameter</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/verifyLogin" target="_blank">https://automationexercise.com/api/verifyLogin</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        400
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return bad request
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 9: DELETE To Verify Login</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-delete">DELETE</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/verifyLogin" target="_blank">https://automationexercise.com/api/verifyLogin</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        405
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return method not supported
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 10: POST To Verify Login with invalid details</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/verifyLogin" target="_blank">https://automationexercise.com/api/verifyLogin</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        404
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Should return user not found
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 11: POST To Create/Register User Account</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-post">POST</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/createAccount" target="_blank">https://automationexercise.com/api/createAccount</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        201
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Create new user account
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 12: DELETE METHOD To Delete User Account</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-delete">DELETE</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/deleteAccount" target="_blank">https://automationexercise.com/api/deleteAccount</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Delete user account
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 13: PUT METHOD To Update User Account</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-put">PUT</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/updateAccount" target="_blank">https://automationexercise.com/api/updateAccount</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Update user account
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="api-item">
+                <div class="api-header">
+                    <div class="api-title">API 14: GET user account detail by email</div>
+                    <div class="api-status status-skip">NOT TESTED</div>
+                </div>
+                <div class="api-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Method:</div>
+                        <span class="method-get">GET</span>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">URL:</div>
+                        <a href="https://automationexercise.com/api/getUserDetailByEmail" target="_blank">https://automationexercise.com/api/getUserDetailByEmail</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Expected Code:</div>
+                        200
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Description:</div>
+                        Get user details by email
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <p>Report generated by SeleniumHigh Framework</p>
+            <p>Target: <a href="https://automationexercise.com/api_list" target="_blank">automationexercise.com/api_list</a></p>
+        </div>
+    </div>
+</body>
+</html>
+        

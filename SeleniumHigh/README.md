@@ -1,83 +1,153 @@
-# SeleniumHigh - Advanced E2E Testing Framework
+# SeleniumHigh Framework
 
-## Overview
-SeleniumHigh adalah framework testing yang advanced untuk melakukan E2E (End-to-End) testing dan modular testing dengan fitur-fitur multifungsi.
+Framework testing automation yang sederhana dan modular untuk testing website dan API.
 
-## Fitur Utama
-- **Multi-Browser Support**: Chrome, Firefox, Safari, Edge
-- **Parallel Execution**: Testing paralel dengan pytest-xdist
-- **API Testing Integration**: Kombinasi UI dan API testing
-- **Data-Driven Testing**: Testing dengan multiple data sets
-- **Visual Testing**: Screenshot comparison dan visual regression
-- **Performance Monitoring**: Network capture dan performance metrics
-- **Cross-Platform**: Support untuk Windows, Linux, macOS
-- **CI/CD Ready**: Integration dengan GitHub Actions, Jenkins, dll
-- **Reporting**: HTML, JSON, XML reports dengan screenshots
-- **Mobile Testing**: Responsive testing dan mobile emulation
+## 🚀 Fitur Utama
 
-## Struktur Project
+- **Selenium WebDriver**: Testing UI otomatis
+- **API Testing**: Testing API dengan requests
+- **Page Object Model**: Struktur yang modular dan mudah maintain
+- **Pytest**: Framework testing yang powerful
+- **HTML Reports**: Laporan test yang informatif
+
+## 📁 Struktur Project
+
 ```
 SeleniumHigh/
-├── config/                 # Konfigurasi environment
-├── core/                   # Core framework components
-├── pages/                  # Page Object Models
-├── tests/                  # Test cases
-├── data/                   # Test data dan fixtures
-├── utils/                  # Utility functions
-├── reports/                # Test reports
-├── screenshots/            # Screenshots dan visual testing
-├── logs/                   # Log files
-├── drivers/                # WebDriver executables
-├── api/                    # API testing modules
-└── mobile/                 # Mobile testing modules
+├── pages/           # Page Object Models
+│   ├── base_page.py
+│   └── home_page.py
+├── api/             # API Client
+│   └── api_client.py
+├── tests/           # Test files
+│   ├── test_simple.py
+│   └── test_api_only.py
+├── conftest.py      # Pytest fixtures
+├── requirements.txt # Dependencies
+└── pytest.ini      # Pytest configuration
 ```
 
-## Setup dan Installation
+## 🛠️ Setup
+
+### 1. Install Dependencies
 ```bash
-# Install dependencies
 pip install -r requirements.txt
+```
 
-# Setup environment
-cp config/config.example.yaml config/config.yaml
-# Edit config.yaml sesuai environment
+### 2. Install ChromeDriver (Opsional)
+Jika menggunakan Selenium:
+```bash
+# Download ChromeDriver sesuai versi Chrome Anda
+# Atau gunakan webdriver-manager (otomatis)
+```
 
-# Run tests
+## 🏃‍♂️ Cara Menjalankan Tests
+
+### 1. Test API Saja (Tanpa Browser)
+```bash
+# Test API connection
+python3 -c "import requests; response = requests.get('https://automationexercise.com/api/productsList', timeout=10); print(f'Status: {response.status_code}')"
+
+# Atau jalankan test API
+pytest tests/test_api_only.py -v
+```
+
+### 2. Test Selenium (Dengan Browser)
+```bash
+# Jalankan test sederhana
+pytest tests/test_simple.py -v
+
+# Jalankan test tertentu
+pytest tests/test_simple.py::TestSimple::test_homepage_loads -v
+```
+
+### 3. Jalankan Semua Tests
+```bash
 pytest tests/ -v
 ```
 
-## Usage Examples
-```python
-# E2E Test Example
-def test_complete_user_journey(setup_browser):
-    home_page = HomePage(setup_browser)
-    login_page = LoginPage(setup_browser)
-    
-    # Complete user flow
-    home_page.navigate_to_login()
-    login_page.login("user@example.com", "password")
-    assert home_page.is_user_logged_in()
-
-# API + UI Integration Test
-def test_api_ui_integration(setup_browser, api_client):
-    # API call to create user
-    user_data = api_client.create_user(test_data)
-    
-    # UI verification
-    home_page = HomePage(setup_browser)
-    home_page.login(user_data['email'], user_data['password'])
-    assert home_page.is_user_logged_in()
+### 4. Generate HTML Report
+```bash
+pytest tests/ --html=reports/test_report.html --self-contained-html
 ```
 
-## Configuration
-Framework mendukung multiple environment:
-- Development
-- Staging  
-- Production
-- Local
+## 📝 Contoh Test
 
-## Reporting
-- HTML Reports dengan screenshots
-- JSON/XML untuk CI/CD integration
-- Performance metrics
-- API call logs
-- Visual regression reports 
+### API Test
+```python
+def test_api_connection(self):
+    response = requests.get("https://automationexercise.com/api/productsList", timeout=10)
+    assert response.status_code == 200
+    print("✅ API connection successful")
+```
+
+### Selenium Test
+```python
+def test_homepage_loads(self, setup_browser):
+    driver = setup_browser
+    home_page = HomePage(driver)
+    home_page.navigate_to_home()
+    assert "Automation Exercise" in driver.title
+    print("✅ Homepage loaded successfully")
+```
+
+## 🔧 Troubleshooting
+
+### ChromeDriver Issues
+Jika ada masalah dengan ChromeDriver:
+
+1. **Hapus cache webdriver-manager**:
+   ```bash
+   rm -rf ~/.wdm
+   ```
+
+2. **Update webdriver-manager**:
+   ```bash
+   pip install --upgrade webdriver-manager
+   ```
+
+3. **Download ChromeDriver manual**:
+   - Cek versi Chrome: `google-chrome --version`
+   - Download ChromeDriver yang sesuai dari: https://chromedriver.chromium.org/
+
+### Import Issues
+Jika ada error `ModuleNotFoundError: No module named 'pages'`:
+
+1. Pastikan berada di direktori `SeleniumHigh`
+2. Pastikan semua file `__init__.py` ada
+3. Jalankan dengan Python path yang benar:
+   ```bash
+   PYTHONPATH=. pytest tests/ -v
+   ```
+
+## 📊 Reports
+
+Setelah menjalankan tests, laporan akan tersimpan di:
+- `reports/test_report.html` - HTML report
+- `screenshots/` - Screenshots jika ada error
+
+## 🎯 Target Website
+
+Framework ini dikonfigurasi untuk testing website:
+- **Website**: https://automationexercise.com/
+- **API**: https://automationexercise.com/api/
+
+## 📚 Dependencies
+
+- `pytest==7.4.3` - Testing framework
+- `selenium==4.15.2` - Web automation
+- `requests==2.31.0` - HTTP requests
+- `webdriver-manager==4.0.1` - Driver management
+- `pytest-html==4.1.1` - HTML reports
+
+## 🤝 Contributing
+
+1. Fork project
+2. Buat branch baru
+3. Commit changes
+4. Push ke branch
+5. Buat Pull Request
+
+## 📄 License
+
+MIT License 
