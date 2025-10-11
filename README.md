@@ -1,3 +1,10 @@
+<!-- Ilustrasi AI Automation Testing -->
+<p align="center">
+  <img src="API_Automation.png" alt="AI Automation Selenium" width="500"/>
+  <br>
+  <em>Ilustrasi: AI & Automation Testing - Gambar Lokal</em>
+</p>
+
 # Selenium-API
 
 Framework automation berbasis **Selenium + Pytest** untuk pembelajaran dan testing automation dengan berbagai tingkat kompleksitas.
