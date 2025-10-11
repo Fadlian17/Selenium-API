@@ -112,17 +112,18 @@ class BrandAPITests(APITestBase):
 class SearchAPITests(APITestBase):
     """Search-related API tests"""
     
-    def test_search_product_valid(self) -> TestResult:
+    def test_api_5_post_search_product_valid(self) -> TestResult:
         """Test API 5: POST To Search Product with valid parameter"""
         result = TestResult("POST To Search Product", "PASS")
-        
         try:
             search_data = {'search_product': 'tshirt'}
             response, response_time = self.post("searchProduct", data=search_data)
             result.response_time = response_time
             result.set_response_info(200, response.status_code)
-            
+
+            # Assertion status code
             if self.assert_status_code(response, 200):
+                # Assertion JSON key
                 if self.assert_json_contains_key(response, "products"):
                     data = response.json()
                     result.set_response_data({"search_results": len(data.get("products", []))})
@@ -133,11 +134,9 @@ class SearchAPITests(APITestBase):
             else:
                 result.status = "FAIL"
                 result.set_error(f"Expected 200, got {response.status_code}")
-                
         except Exception as e:
             result.status = "FAIL"
             result.set_error(str(e))
-        
         return result
     
     def test_search_product_missing_param(self) -> TestResult:
@@ -513,4 +512,4 @@ def test_run_all_api_tests(api_test_suite):
 if __name__ == "__main__":
     # Run test suite directly
     suite = APITestSuite()
-    suite.run_all_tests() 
+    suite.run_all_tests()

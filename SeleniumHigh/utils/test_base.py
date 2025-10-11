@@ -49,21 +49,35 @@ class APITestBase(ABC):
         return self.make_request('DELETE', endpoint, **kwargs)
     
     def assert_status_code(self, response: requests.Response, expected_codes: Any) -> bool:
-        """Assert response status code"""
+        """Assert response status code and log error if mismatch"""
         if isinstance(expected_codes, list):
-            return response.status_code in expected_codes
-        return response.status_code == expected_codes
-    
+            if response.status_code not in expected_codes:
+                print(f"❌ Status code mismatch: expected {expected_codes}, got {response.status_code}")
+                return False
+            return True
+        else:
+            if response.status_code != expected_codes:
+                print(f"❌ Status code mismatch: expected {expected_codes}, got {response.status_code}")
+                return False
+            return True
+
     def assert_response_contains(self, response: requests.Response, expected_text: str) -> bool:
-        """Assert response contains expected text"""
-        return expected_text in response.text
-    
+        """Assert response contains expected text and log error if missing"""
+        if expected_text not in response.text:
+            print(f"❌ Response does not contain expected text: '{expected_text}'")
+            return False
+        return True
+
     def assert_json_contains_key(self, response: requests.Response, key: str) -> bool:
-        """Assert JSON response contains expected key"""
+        """Assert JSON response contains expected key and log error if missing"""
         try:
             data = response.json()
-            return key in data
+            if key not in data:
+                print(f"❌ JSON key '{key}' not found in response")
+                return False
+            return True
         except ValueError:
+            print("❌ Response is not valid JSON")
             return False
     
     def create_test_user(self) -> Dict[str, str]:
@@ -174,4 +188,4 @@ class TestResult:
             "error_message": self.error_message,
             "response_data": self.response_data,
             "timestamp": self.timestamp.isoformat()
-        } 
+        }
