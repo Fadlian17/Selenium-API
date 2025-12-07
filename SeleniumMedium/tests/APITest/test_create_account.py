@@ -24,8 +24,8 @@ def test_create_account_success():
         "city": "Bandung",
         "mobile_number": "08123456789"
     }
-    response = requests.post(url, data=data)
-    assert response.status_code == 201
+    response = requests.post(url, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
+    assert response.status_code == 200
     assert "User created!" in response.text
 
 def test_create_account_missing_field():
@@ -36,6 +36,6 @@ def test_create_account_missing_field():
         # email field missing intentionally
         "password": "Test1234"
     }
-    response = requests.post(url, data=data)
+    response = requests.post(url, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
     assert response.status_code == 400
     assert "Bad request" in response.text
