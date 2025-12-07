@@ -28,7 +28,6 @@ def test_create_account_success():
     assert response.status_code == 201
     assert "User created!" in response.text
 
-
 def test_create_account_missing_field():
     """Test negative: Register user baru dengan data tidak lengkap"""
     url = "https://automationexercise.com/api/createAccount"
